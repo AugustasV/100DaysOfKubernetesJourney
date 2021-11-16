@@ -34,4 +34,3 @@ kube-controller-manager-kind-control-plane   1/1     Running   0          107m
 kube-proxy-8vxj6                             1/1     Running   0          106m
 kube-scheduler-kind-control-plane            1/1     Running   0          107m
 ```
-100DaysOfKubernetesJourney
