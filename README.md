@@ -10,8 +10,8 @@
 
 ## Stepping out the door
 
-- [ ] ☸ 1 > [Trying out KinD, Podman in Rootless](001/README.md)
-- [ ] ☸ 2 > [](002/README.md)
+- [x] ☸ 1 > [Trying out KinD, Podman in Rootless](001/README.md)
+- [x] ☸ 2 > [Using DevSpace for manual deployment](002/README.md)
 - [ ] ☸ 3 > [](003/README.md)
 - [ ] ☸ 4 > [](004/README.md)
 - [ ] ☸ 5 > [](005/README.md)
