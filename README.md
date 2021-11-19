@@ -12,7 +12,7 @@
 
 - [x] ☸ 1 > [Trying out KinD, Podman in Rootless](001/Readme.md)
 - [x] ☸ 2 > [Using DevSpace for manual deployment](002/Readme.md)
-- [ ] ☸ 3 > [](003/Readme.md)
+- [x] ☸ 3 > [DevSpace local deployment](003/Readme.md)
 - [ ] ☸ 4 > [](004/Readme.md)
 - [ ] ☸ 5 > [](005/Readme.md)
 - [ ] ☸ 6 > [](006/Readme.md)
