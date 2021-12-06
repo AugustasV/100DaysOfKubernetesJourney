@@ -14,7 +14,7 @@
 - [x] ☸ 2 > [Using DevSpace for manual deployment](002/Readme.md)
 - [x] ☸ 3 > [DevSpace local deployment](003/Readme.md)
 - [x] ☸ 4 > [Still DevSpace](004/Readme.md)
-- [ ] ☸ 5 > [](005/Readme.md)
+- [x] ☸ 5 > [K8GB - cloud native Kubernetes Global Balancer First try](005/Readme.md)
 - [ ] ☸ 6 > [](006/Readme.md)
 - [ ] ☸ 7 > [](007/Readme.md)
 - [ ] ☸ 8 > [](008/Readme.md)
