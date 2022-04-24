@@ -7,13 +7,12 @@
 * Loadbalancer
 * Multi cluster connect & management
 * RBAC knowledge.
-* Loadbalancing types (round robin, weighting, active/passive, etc.)
+* Loadbalancer types (round-robin, weighting, active/passive, etc.)
 
 ## Use Case
-To run it on two different clusters in different regions. Learn about that kind of loadbalancing between different nodes in different regions, not nginx way..
-
+To run it on two different clusters in different regions. Learn about that kind of loadbalancing between different nodes in different regions, not nginx way...
 ## Research
 Networking, to learn it how it works, make helm deployment.
 
 ## Try yourself
-Tried to spin up local cluster by [following docs](https://www.k8gb.io/docs/local.html#running-project-locally)  Tests failed.
+Tried to spin up local cluster by [following docs](https://www.k8gb.io/docs/local.html#running-project-locally)Tests failed.
