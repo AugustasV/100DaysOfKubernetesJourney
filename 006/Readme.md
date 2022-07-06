@@ -20,3 +20,10 @@ All those Vm's should be configured, I think the best way to do it is via Ansibl
 
 First step to generate access token on three different cloud providers (digital ocean, vultr and hetzner).
 Interesting that on vultr I could even specify subnet access control for API token.
+
+Create and specify tokens from cloud providers in `variables.tf` file or directly in plan command line  
+Example:
+
+`
+terraform plan --var hetzner_token=46468468468486
+`
