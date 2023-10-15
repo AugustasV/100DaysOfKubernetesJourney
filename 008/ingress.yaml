@@ -1,0 +1,22 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  creationTimestamp: "2023-10-12T18:29:33Z"
+  generation: 1
+  name: httpd-demo
+  namespace: default
+  resourceVersion: "29371"
+  uid: 8ec4242c-3aa1-4d3a-b3bd-632d67806d06
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: www.demo.io
+    http:
+      paths:
+      - backend:
+          service:
+            name: httpd 
+            port:
+              number: 80
+        path: /
+        pathType: Exact

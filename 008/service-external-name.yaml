@@ -1,0 +1,8 @@
+ApiVersion: v1
+kind: Service
+metadata:
+  name: my-httpd-svc
+  namespace: default 
+spec:
+  type: ExternalName
+  externalName: cloudstuff.pro
