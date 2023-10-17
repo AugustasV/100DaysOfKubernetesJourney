@@ -1,0 +1,19 @@
+apiVersion: autoscaling/v1
+kind: HorizontalPodAutoscaler
+metadata:
+  creationTimestamp: "2023-10-16T12:24:10Z"
+  name: httpd
+  namespace: default
+  resourceVersion: "105097"
+  uid: 7d49b8c4-89e9-4d26-88fc-12c3cc6f9e3f
+spec:
+  maxReplicas: 10
+  minReplicas: 2
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: httpd
+  targetCPUUtilizationPercentage: 50
+status:
+  currentReplicas: 0
+  desiredReplicas: 0

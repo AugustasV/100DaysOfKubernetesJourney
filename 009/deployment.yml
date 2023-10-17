@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: httpd
+  labels:
+    app.kubernetes.io/name: httpd
+spec:
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: httpd
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: httpd
+    spec:
+      containers:
+        - env:
+          - name: PORT
+            value: '80'
+          - name: HTTPD_TESTING_TAG
+            valueFrom:
+              configMapKeyRef:
+                name: httpd-configfile
+                key: httpd_testing_tag
+          image: 'httpd:alpine'
+          imagePullPolicy: Always
+          name: httpd
+          ports:
+            - containerPort: 80
+              name: http
+              protocol: TCP
+          volumeMounts:
+            - mountPath: data/my-pv-httpd
+              name: my-pv-httpd
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 80
+            initialDelaySeconds: 10
+            periodSeconds: 10
+            timeoutSeconds: 2
+      volumes:
+        - name: my-pv-httpd
+          persistentVolumeClaim:
+            claimName: httpd-pvc
