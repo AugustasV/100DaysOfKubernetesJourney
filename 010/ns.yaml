@@ -1,0 +1,35 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  labels:
+    kubernetes.io/metadata.name: wind
+  name: wind
+spec:
+  finalizers:
+  - kubernetes
+status:
+  phase: Active
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  labels:
+    kubernetes.io/metadata.name: wind
+  name: ice
+spec:
+  finalizers:
+  - kubernetes
+status:
+  phase: Active
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  labels:
+    kubernetes.io/metadata.name: wind
+  name: fire
+spec:
+  finalizers:
+  - kubernetes
+status:
+  phase: Active
